@@ -12,23 +12,24 @@
 <body>
 
     <h2>Input Form</h2>
-    <form id="inputForm">
+    <button id = "new_button">Add New</button>
+    <form id="inputForm" style="display: none;">
         <label for="inputName">Name:</label>
-        <input type="text" id="inputName" name="inputName" required>
+        <input type="text" id="inputName" name="inputName" >
         <br>
         <label for="InputAuthor">Author: </label>
-        <input type="text" id="inputAuthor" name="inputAuthor" required>
+        <input type="text" id="inputAuthor" name="inputAuthor" >
         <br>
         <label for="Pages">Pages:</label>
-        <input type="text" id="pages" name="pages" required>
+        <input type="text" id="pages" name="pages">
         <br>
         <label for="isRead">Read it :</label>
         <select id="isRead" name="isRead">
             <option value="Read">Read</option>
             <option value="Not_Read">Not Read</option>
         </select>
-        <button type="button" onclick="submitForm()">Submit</button>
-        <button type="button" onclick="deletethisBook()">Delete</button>
+        <button type="button" id="submit">Submit</button>
+        <button type="button" id = "delete">Delete</button>
 
     </form>
     <table id="myTable">
