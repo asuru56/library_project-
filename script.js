@@ -18,7 +18,7 @@ function displayBooks(){
         const book = myLibrary[i++];
         console.log(book.title, book.author, book.pages, book.isRead);
 }
-}
+
 
 function deletethisBook(){
     myLibrary.pop();
