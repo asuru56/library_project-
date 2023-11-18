@@ -10,25 +10,26 @@
 </head>
 
 <body>
-    <button onclick="openBook()">New Book</button>
-    <button onclick="openModal()">Open Modal</button>
+
     <h2>Input Form</h2>
-    <form id = "inputForm">
-        <label for = "inputName">Name:</label>
-        <input type = "text" id = "inputName" name="inputName" required>
+    <form id="inputForm">
+        <label for="inputName">Name:</label>
+        <input type="text" id="inputName" name="inputName" required>
         <br>
-        <label for = "InputAuthor">Author: </label>
-        <input type = "text" id = "inputAuthor" name="inputAuthor" required>
+        <label for="InputAuthor">Author: </label>
+        <input type="text" id="inputAuthor" name="inputAuthor" required>
         <br>
-        <label for = "Pages">Pages:</label>
-        <input type = "text" id="pages" name="pages" required>
+        <label for="Pages">Pages:</label>
+        <input type="text" id="pages" name="pages" required>
         <br>
-        <label for = "iRead">Read it :</label>
-        <select id = "iRead" name = "iRead">
-            <option value = "Read">Read</option>
-            <option value = "Not Read">Not Read</option>
+        <label for="isRead">Read it :</label>
+        <select id="isRead" name="isRead">
+            <option value="Read">Read</option>
+            <option value="Not_Read">Not Read</option>
         </select>
         <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="deletethisBook()">Delete</button>
+
     </form>
     <table id="myTable">
         <tr>
@@ -36,8 +37,8 @@
             <th>Author</th>
             <th>Pages</th>
             <th>Read/Not Read</th>
-          </tr>
-        
+            
+        </tr>
     </table>
 </body>
 
